@@ -2,9 +2,9 @@ import Image from "next/image"
 
 export default function Header(){
     return(
-        <div className="flex flex-row bg-teal-400 z-999 sticky top-0 gap-140">
+        <div className="flex flex-row bg-teal-400 z-999 sticky top-0 opacity-75 gap-140 px-10 py-3 mx-0.5 my-10 rounded-2xl outline-cyan-600">
             {/* container for image*/}
-            <div className="basis-64 ">
+            <div className="basis-64 mr-50">
                     <Image 
                     width={25}
                     height={100}
@@ -15,12 +15,10 @@ export default function Header(){
 
             {/*container for other icons */}
             <div className="basis-128 grid grid-cols-3">
-                <div className=" p-3 w-auto text-center ">hi</div>
+                <div className=" p-3 w-auto text-center ">heyaa!</div>
                 <div className=" p-3 w-auto text-center ">Projects</div>
                 <div className=" p-3 w-auto text-center ">about</div>
-
             </div>
-
         </div>
     )
 }
