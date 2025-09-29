@@ -6,7 +6,7 @@ import Profile from "@/components/profile"
 export default function Home() {
   return (
     
-    <div className="h-screen">
+    <div className="h-screen bg-whitish-1">
     <Header />
 
     {/*this is for profile section*/}

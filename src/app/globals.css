@@ -112,6 +112,22 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@theme {
+  --color-pearly-100: #fff4fa; /* rgb(255,244,250) */
+  --color-pearly-200: #ffecf6; /* rgb(255,236,246) */
+  --color-pearly-300: #ffe6f8; /* rgb(255,230,248) */
+  --color-pearly-400: #ffdcf5; /* rgb(255,220,245) */
+  --color-pearly-500: #ffd4f3; /* rgb(255,212,243) */
+  --color-earthGreen-100: #b2d4a3; /* rgb(178,212,163) */
+  --color-earthGreen-200: #91b880; /* rgb(145,184,128) */
+  --color-earthGreen-300: #719f5d; /* rgb(113,159,93) */
+  --color-earthGreen-400: #598745; /* rgb(89,135,69) */
+  --color-earthGreen-500: #467731; /* rgb(70,119,49) */
+  --color-whitish-1: 	#f9f5ea;	/*(249,245,234)*/
+
+  --font-display:"tt-modernoir",sans-serif;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

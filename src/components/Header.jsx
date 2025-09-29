@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Header(){
     return(
-        <div className="flex flex-row bg-teal-400 z-999 sticky top-0 opacity-75 gap-140 px-10 py-3 mx-0.5 my-10 rounded-2xl outline-cyan-600">
+        <div className="flex flex-row bg-earthGreen-100 z-999 sticky top-0 gap-140 px-10 py-3 mx-0.5 mb-10 rounded-2xl outline-cyan-600">
             {/* container for image*/}
             <div className="basis-64 mr-50">
                     <Image 
