@@ -1,9 +1,15 @@
 import Image from "next/image"
 import { FaGithub } from "react-icons/fa";
 import { TbWorldSearch } from "react-icons/tb";
+import GlassIcons from "./GlassIcons";
 
 
 export default function Projects(){
+    const items = [{
+        icon:<FaGithub />
+    },{
+        icon:<TbWorldSearch />
+    }]
     return(
         <div className="rounded bg-earthGreen-100 ">
             {/*this will be a card for a project image on the right and text on the left */}
@@ -26,9 +32,8 @@ export default function Projects(){
                     </div>
                     
                     {/*code and links used add icons with links */}
-                    <div className="flex gap-1 text-2xl">
-                        <FaGithub />
-                        <TbWorldSearch />
+                    <div className="flex items-start">
+                        <GlassIcons items={items} />
                     </div>
                 </div>
             </div>

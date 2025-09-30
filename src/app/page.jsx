@@ -3,6 +3,7 @@ import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import Profile from "@/components/profile"
 import Projects from "@/components/projects";
+import About from "@/components/About";
 
 {/* icons ill need */}
 import { CiLinkedin } from "react-icons/ci";
@@ -13,13 +14,12 @@ import { FaInstagram } from "react-icons/fa";
 export default function Home() {
   return (
     
-    <div className="h-screen bg-whitish-1">
-     <div className="px-0.5 pb-0.5">
+    <div className="bg-whitish-1">
       <Header />
-     </div>
+    
 
     {/*this is for profile section*/}
-    <div className="p-0.5">
+    <div className="p-15 px-28">
       <Profile/>
     </div>
 
@@ -29,7 +29,9 @@ export default function Home() {
      </div>
 
      {/*this is for free time section */}
-     <div></div>
+     <div className="p-0.5">
+      <About />
+     </div>
 
      <div className="p-0.5">
       <Footer />
