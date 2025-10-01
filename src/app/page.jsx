@@ -20,17 +20,17 @@ export default function Home() {
     
 
     {/*this is for profile section*/}
-    <div className="p-15 px-28" id="profile">
+    <div className="p-15 px-28" id="Profile">
       <Profile/>
     </div>
 
      {/*this is for projects section*/}
-     <div className="p-0.5" id="projects">
+     <div className="p-0.5 mb-96" id="Projects" >
       <Projects/>
      </div>
 
      {/*this is for free time section */}
-     <div className="p-0.5" id="freeTime">
+     <div className="p-0.5" id="About">
       <About />
      </div>
 
