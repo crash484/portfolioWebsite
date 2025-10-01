@@ -27,12 +27,11 @@ export default function Projects(){
             >
             {/*this will be a card for a project image on the right and text on the left */}
             <div className="flex gap-1 relative p-6 pb-2 ">
-                <div className="relative overflow-hidden ">
+                <div className="w-100 h-45 relative overflow-hidden ">
                     <Image 
                     src="/blogDemo.png"
                     alt="BlogPicture"
-                    width={400}
-                    height={200}
+                    fill
                     />
                 </div>
                 <div className="w-300">
@@ -64,12 +63,11 @@ export default function Projects(){
             delay={0.4}
             >
             <div className="flex gap-1 p-6 rounded relative pb-2">
-                <div className="relative ">
+                <div className="relative w-100 h-45 ">
                     <Image 
-                    src="/me.jpg"
-                    alt="for now nothing"
-                    width={200}
-                    height={200}
+                    src="/SageExcel.png"
+                    alt="SageExcel png"
+                    fill
                     />
                 </div>
                 <div className="w-300">
@@ -82,7 +80,7 @@ export default function Projects(){
                     </div>
                     
                     {/*code and links used add icons with links */}
-                    <div className="flex justify-start mt-20">
+                    <div className="flex justify-start ">
                         <GlassIcons className="mx-0" items={items} />
                     </div>
                 </div>
