@@ -5,6 +5,7 @@ import Profile from "@/components/profile"
 import Projects from "@/components/projects";
 import About from "@/components/About";
 
+
 {/* icons ill need */}
 import { CiLinkedin } from "react-icons/ci";
 import { CiMail } from "react-icons/ci";
@@ -14,22 +15,22 @@ import { FaInstagram } from "react-icons/fa";
 export default function Home() {
   return (
     
-    <div className="bg-whitish-1">
+    <div className="bg-reddish-1">
       <Header />
     
 
     {/*this is for profile section*/}
-    <div className="p-15 px-28">
+    <div className="p-15 px-28" id="profile">
       <Profile/>
     </div>
 
      {/*this is for projects section*/}
-     <div className="p-0.5">
+     <div className="p-0.5" id="projects">
       <Projects/>
      </div>
 
      {/*this is for free time section */}
-     <div className="p-0.5">
+     <div className="p-0.5" id="freeTime">
       <About />
      </div>
 
