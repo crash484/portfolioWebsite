@@ -1,17 +1,10 @@
 import Image from "next/image"
 import { FaGithub } from "react-icons/fa";
 import { TbWorldSearch } from "react-icons/tb";
-import GlassIcons from "./GlassIcons";
 import AnimatedContent from "./AnimatedContent"
 
 export default function Projects(){
-    const items = [{
-        icon:<FaGithub />,
-        link:null
-    },{
-        icon:<TbWorldSearch />,
-        link:"https://sage-excel.vercel.app/"
-    }]
+    
     return(
         <div className="rounded bg-reddish-1 ">
             <AnimatedContent
@@ -44,8 +37,13 @@ export default function Projects(){
                     </div>
                     
                     {/*code and links used add icons with links */}
-                    <div className="flex items-start">
-                        <GlassIcons items={items}></GlassIcons>
+                    <div className="flex items-start gap-8 mt-22 text-3xl">
+                        <a href="https://github.com/your-username/blog-repo" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition-colors">
+                            <FaGithub />
+                        </a>
+                        <a href="https://shashwhat.me" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition-colors">
+                            <TbWorldSearch />
+                        </a>
                     </div>
                 </div>
             </div>
@@ -80,8 +78,13 @@ export default function Projects(){
                     </div>
                     
                     {/*code and links used add icons with links */}
-                    <div className="flex justify-start ">
-                        <GlassIcons className="mx-0" items={items} />
+                    <div className="flex justify-start gap-8 text-3xl">
+                        <a href="https://github.com/your-username/sage-excel-repo" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition-colors">
+                            <FaGithub />
+                        </a>
+                        <a href="https://your-sage-excel-demo.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition-colors">
+                            <TbWorldSearch />
+                        </a>
                     </div>
                 </div>
             </div>
