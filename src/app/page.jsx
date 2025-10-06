@@ -25,7 +25,7 @@ export default function Home() {
     </div>
 
      {/*this is for projects section*/}
-     <div className="p-0.5 mb-96" id="Projects" >
+     <div className="p-0.5 mb-20" id="Projects" >
       <Projects/>
      </div>
 

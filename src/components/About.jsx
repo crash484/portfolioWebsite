@@ -48,7 +48,7 @@ export default function About(){
                         <button
                             key={index}
                             onClick={() => setCurrentIndex(index)}
-                            className={`w-3 h-3 rounded-full ${
+                            className={`w-2 h-2 rounded-full ${
                                 index === currentIndex 
                                     ? 'bg-white' 
                                     : 'bg-white opacity-50'
