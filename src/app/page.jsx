@@ -1,9 +1,10 @@
-import Image from "next/image";
+"use client"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import Profile from "@/components/profile"
 import Projects from "@/components/projects";
 import About from "@/components/About";
+import { useState,useEffect } from "react";
 
 
 {/* icons ill need */}
@@ -13,10 +14,15 @@ import { FaInstagram } from "react-icons/fa";
 
 
 export default function Home() {
+  //for changing theme
+  const [isDark, setIsDark] = useState(false);
+  useEffect(()=>{
+    console.log(isDark)
+  },[isDark])
   return (
     
-    <div className="bg-reddish-1">
-      <Header />
+    <div className={`${isDark?"bg-reddish-1":"bg-amber-500"}`}>
+      <Header isDark={isDark} setIsDark={setIsDark}/>
     
 
     {/*this is for profile section*/}

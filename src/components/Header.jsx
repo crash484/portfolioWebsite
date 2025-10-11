@@ -3,8 +3,13 @@ import Image from "next/image"
 
 import { useState,useEffect } from "react"
 
-export default function Header(){
+export default function Header({isDark,setIsDark}){
     const[activeSection, setActiveSection] = useState("Profile");
+
+    //function for button to trigger state change
+    const trigger = () =>{
+        setIsDark(isDark => !isDark)
+    }
 
     useEffect(()=>{
         const sections = ["Profile","Projects","About"]
@@ -34,7 +39,7 @@ export default function Header(){
     }
 
     return(
-        <div className="flex flex-row bg-reddish-1 z-999 sticky top-0 gap-140 px-10 pb-3  mx-0.5 mb-10 rounded-2xl">
+        <div className="flex flex-row    z-999 sticky top-0 gap-140 pl-5 pb-3  mb-10 rounded-2xl">
             {/* container for image*/}
              
             <div className="basis-64 mr-50">
@@ -48,7 +53,7 @@ export default function Header(){
 
 
             {/*container for other icons */}
-            <div className="basis-128 grid grid-cols-3">
+            <div className="basis-128 grid grid-cols-4">
                 <button className={`p-3 w-auto text-center font-display text-red-300 hover:bg-card/50 transition-all duration-500 rounded-2xl
                                     relative ${activeSection==="Profile"?"after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-3/4 after:h-0.5 after:bg-red-300 after:rounded-full":""}`}
                         onClick={()=>scrollToSection("Profile")}
@@ -66,6 +71,10 @@ export default function Header(){
                         onClick={()=>scrollToSection("About")}
                 >
                     About
+                </button>
+                <button className="p-1 w-20 text-center hover:bg-card/50 transition-all duration-500 rounded-2xl"
+                        onClick={trigger}>
+                    d
                 </button>
             </div>
         </div>

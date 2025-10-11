@@ -18,7 +18,7 @@ export default function About(){
 
     const images=[{src:"/me.jpg"},{src:"/blogDemo.png"},{src:"/SageExcel.png"}]
     return(
-        <div className="flex flex-col items-center p-0.5 bg-reddish-1 w-full h-fit ">
+        <div className="flex flex-col items-center p-0.5 s w-full h-fit ">
             {/*few pictures of me in a nice format*/}
             <div className="relative w-96 h-96 overflow-hidden rounded-lg">
                 <div className="flex transition-transform duration-300 ease-in-out h-full"

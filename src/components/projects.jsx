@@ -1,23 +1,11 @@
 import Image from "next/image"
 import { FaGithub } from "react-icons/fa";
 import { TbWorldSearch } from "react-icons/tb";
-import AnimatedContent from "./AnimatedContent"
 
 export default function Projects(){
     
     return(
-        <div className="rounded bg-reddish-1 ">
-            <AnimatedContent
-            distance={100}
-            direction="horizontal"
-            reverse={false}
-            duration={1.2}
-            initialOpacity={0.0}
-            animateOpacity={true}
-            scale={2}
-            threshold={0.5}
-            delay={0.4}
-            >
+        <div className="rounded ">
             {/*this will be a card for a project image on the right and text on the left */}
             <div className="flex gap-1 relative p-6 pb-2 ">
                 <div className="w-100 h-50 relative overflow-hidden rounded-lg ">
@@ -51,19 +39,7 @@ export default function Projects(){
                     </div>
                 </div>
             </div>
-        </AnimatedContent>
 
-            <AnimatedContent
-            distance={100}
-            direction="horizontal"
-            reverse={false}
-            duration={1.2}
-            initialOpacity={0.0}
-            animateOpacity={true}
-            scale={2}
-            threshold={0.5}
-            delay={0.4}
-            >
             <div className="flex gap-1 p-6 rounded relative pb-2">
                 <div className="relative w-100 h-50 overflow-hidden rounded-lg">
                     <Image 
@@ -96,7 +72,6 @@ export default function Projects(){
                     </div>
                 </div>
             </div>
-            </AnimatedContent>
 
         </div>
     )
