@@ -21,7 +21,7 @@ export default function Home() {
   },[isDark])
   return (
     
-    <div className={`${isDark?"bg-reddish-1":"bg-amber-500"}`}>
+    <div className={`${isDark?"bg-reddish-1":"bg-pink-950"}`}>
       <Header isDark={isDark} setIsDark={setIsDark}/>
     
 
