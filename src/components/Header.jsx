@@ -39,7 +39,7 @@ export default function Header({isDark,setIsDark}){
     }
 
     return(
-        <div className="flex flex-row    z-999 sticky top-0 gap-140 pl-5 pb-3  mb-10 rounded-2xl">
+        <div className="flex flex-row backdrop-blur-2xl  z-999 sticky top-0 gap-140 pl-5 pb-3  mb-10 rounded-2xl">
             {/* container for image*/}
              
             <div className="basis-64 mr-50">
