@@ -30,9 +30,6 @@ export default function Projects(){
                     
                     {/*code and links used add icons with links */}
                     <div className="flex items-start gap-8 mt-13 text-3xl">
-                        <a href="https://github.com/your-username/blog-repo" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition-colors">
-                            <FaGithub />
-                        </a>
                         <a href="https://shashwhat.me" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition-colors">
                             <TbWorldSearch />
                         </a>
@@ -63,10 +60,10 @@ export default function Projects(){
                     
                     {/*code and links used add icons with links */}
                     <div className="flex justify-start gap-8 mt-6 text-3xl">
-                        <a href="https://github.com/your-username/sage-excel-repo" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition-colors">
+                        <a href="https://github.com/crash484/SageExcel" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition-colors">
                             <FaGithub />
                         </a>
-                        <a href="https://your-sage-excel-demo.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition-colors">
+                        <a href="sage-excel.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition-colors">
                             <TbWorldSearch />
                         </a>
                     </div>

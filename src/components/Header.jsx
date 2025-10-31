@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image"
+import { MdDarkMode } from "react-icons/md";
 
 import { useState,useEffect } from "react"
 
@@ -72,9 +73,12 @@ export default function Header({isDark,setIsDark}){
                 >
                     About
                 </button>
-                <button className="p-1 w-20 text-center hover:bg-card/50 transition-all duration-500 rounded-2xl"
-                        onClick={trigger}>
-                    d
+                <button
+                    className="p-1 w-20 flex items-center justify-center text-center hover:bg-card/50 transition-all duration-500 rounded-2xl"
+                    onClick={trigger}
+                    aria-label="Toggle dark mode"
+                >
+                    <MdDarkMode />
                 </button>
             </div>
         </div>
