@@ -20,7 +20,7 @@ export default function About(){
     return(
         <div className="flex flex-col items-center p-0.5 s w-full h-fit ">
             {/*few pictures of me in a nice format*/}
-            <div className="relative w-96 h-96 overflow-hidden rounded-lg">
+            {/* <div className="relative w-96 h-96 overflow-hidden rounded-lg">
                 <div className="flex transition-transform duration-300 ease-in-out h-full"
                     style={{transform: `translate(-${currentIndex * 100}%)`}}>
                    {images.map((image,index)=>(
@@ -42,7 +42,7 @@ export default function About(){
                         className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black opacity-50 text-white p-2 rounded-full hover:opacity-70">
                             →
                         </button>
-                         {/* Dots Indicator */}
+                         {/* Dots Indicator 
                 <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
                     {images.map((_, index) => (
                         <button
@@ -57,7 +57,8 @@ export default function About(){
                     ))}
                 </div>
 
-            </div>
+            </div> 
+            */}
 
             {/*text about me*/}
             <div className="text-lg text-wrap p-50 ">
@@ -91,8 +92,15 @@ export default function About(){
                     <blockquote>
                     “When one has no one, nowhere else one can go! For every man must have somewhere to go.” <br/>— Fyodor Dostoevesky
                     </blockquote>
-
-                
+                    <div className="">
+                        <p>You can reach out to me here:</p>
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/shashwat-jain-0827a8251/" target="_blank"><strong>LinkedIn</strong></a></li>
+                            <li><a href="https://github.com/crash484" target="_blank"><strong>GitHub</strong></a></li>
+                            <li><a href="mailto:jshashwat032@gmail.com"><strong>Email</strong> </a></li>
+                            <li>Here is my <a href="https://drive.google.com/file/d/1-exPNEKhDBulBboIyNcpxxLUWeqXfR4i/view?usp=drive_link" target="_blank"> <b>Resume</b></a></li>
+                        </ul>
+                        </div>                
             </div>
 
         </div>

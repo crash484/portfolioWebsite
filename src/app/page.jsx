@@ -15,23 +15,23 @@ import { FaInstagram } from "react-icons/fa";
 
 export default function Home() {
   //for changing theme
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
   useEffect(()=>{
     console.log(isDark)
   },[isDark])
   return (
     
-    <div className={`${isDark?"bg-reddish-1":"bg-pink-950"}`}>
+    <div className={`${isDark?"bg-reddish-1":"bg-pink-950 text-white"}`}>
       <Header isDark={isDark} setIsDark={setIsDark}/>
     
 
     {/*this is for profile section*/}
-    <div className="p-15 px-28" id="Profile">
+    <div className="p-15 " id="Profile">
       <Profile/>
     </div>
 
      {/*this is for projects section*/}
-     <div className="p-0.5 mb-20" id="Projects" >
+     <div className="p-0.5 " id="Projects" >
       <Projects/>
      </div>
 

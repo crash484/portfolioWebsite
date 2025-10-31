@@ -10,15 +10,6 @@ export default function footer(){
                 Created by @shashwat
             </div>
 
-            <div className="flex gap-1 text-center">
-                You can reach out to me here:
-                <FaInfinity className="text-2xl" />
-                <FaInfinity />
-                <FaInfinity />
-                <FaInfinity />
-         
-            </div>
-
             <div className="">
                 <FaInfinity className="text-3xl" onClick={()=> 
                                                         window.scroll({top:0,
