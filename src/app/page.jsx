@@ -5,6 +5,7 @@ import Profile from "@/components/profile"
 import Projects from "@/components/projects";
 import About from "@/components/About";
 import { useState,useEffect } from "react";
+import Design from "@/components/Design";
 
 
 {/* icons ill need */}
@@ -24,6 +25,10 @@ export default function Home() {
     <div className={`${isDark?"bg-reddish-1":"bg-pink-950 text-white"}`}>
       <Header isDark={isDark} setIsDark={setIsDark}/>
     
+    {/* for design */}
+    <div>
+      <Design />
+    </div>
 
     {/*this is for profile section*/}
     <div className="p-15 " id="Profile">
