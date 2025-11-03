@@ -125,7 +125,10 @@
   --color-earthGreen-500: #467731; /* rgb(70,119,49) */
   --color-whitish-1: 	#f9f5ea;	/*(249,245,234)*/
   --color-reddish-1: #fae3e4;
-  --color-bluish-1: #0ABAB5
+  --color-bluish-1: #0ABAB5;
+  --color-bluish-2: #1e425f;   /* Deep navy blue */
+  --color-secondary: #00b0ff; /* Bright cyan blue */
+  --color-tertiary: #d2efff;  /* Soft sky blue */
 
   --font-display:"tt-modernoir",sans-serif;
 }

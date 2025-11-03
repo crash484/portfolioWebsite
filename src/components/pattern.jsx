@@ -1,4 +1,23 @@
-export default function Pattern({ color1 = "#f68686", color2 = "#a97b7b", color3 = "#453d46", bg = "#191b22" }) {
+import { useEffect } from "react"
+
+export default function Pattern(isDark) {
+
+    /*--color-bluish-2: #1e425f;   /* Deep navy blue 
+  --color-secondary: #00b0ff; /* Bright cyan blue 
+  --color-tertiary: #d2efff;  /* Soft sky blue */ 
+
+    //function to change color values when isDark changes
+    let color1="#1e425f"
+    let color2="#00b9b0"
+    let color3="#d2efff"
+    let bg="#1e425f"
+    useEffect(()=>{
+        if(isDark){
+    }else{
+        //nothing for now
+    }
+    },[isDark])
+    
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

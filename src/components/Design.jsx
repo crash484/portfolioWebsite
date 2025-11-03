@@ -1,6 +1,6 @@
 import Pattern from "@/components/pattern"
 
-export default function Design(){
+export default function Design({isDark}){
     const handleScroll = () => {
       // custom smooth scroll with easing so we can control duration
       const start = window.scrollY; 
@@ -28,14 +28,14 @@ export default function Design(){
     return(
         <div className="flex flex-col mb-300">
             {/* for my name add some font*/}
-            <div className="text-center mb-30" onClick={handleScroll} >
+            <div className="text-center mt-50 mb-80" onClick={handleScroll} >
                 <b className="text-5xl">Shashwat Jain</b>
             </div>
         
             {/* for some drawing or some shit */}
             <div className="w-full h-fit flex justify-end">
               <div className="w-[60%]">
-                <Pattern />
+                <Pattern isDark={isDark}/>
               </div>
             </div>
         </div>

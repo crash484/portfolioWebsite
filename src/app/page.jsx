@@ -23,12 +23,12 @@ export default function Home() {
 
   return (
     
-    <div className={`${isDark?"bg-reddish-1":"bg-pink-950 text-white"}`}>
+    <div className={`${isDark?"bg-bluish-2 text-tertiary":"bg-secondary"}`}>
       <Header isDark={isDark} setIsDark={setIsDark}/>
 
     {/* for design */}
     <div>
-      <Design />
+      <Design isDark={isDark} />
     </div>
 
     {/*this is for profile section*/}
