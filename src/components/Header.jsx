@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image"
-import { MdDarkMode } from "react-icons/md";
+import { TiWaves } from "react-icons/ti";
 
 import { useState,useEffect } from "react"
 
@@ -9,7 +9,8 @@ export default function Header({isDark,setIsDark}){
 
     //function for button to trigger state change
     const trigger = () =>{
-        setIsDark(isDark => !isDark)
+        //setIsDark(isDark => !isDark)
+        alert("still coming up with the second theme sorry!")
     }
 
     useEffect(()=>{
@@ -40,10 +41,10 @@ export default function Header({isDark,setIsDark}){
     }
 
     return(
-        <div className="flex flex-row backdrop-blur-2xl  z-999 sticky top-0 gap-140 pl-5 pb-3  mb-10 rounded-2xl">
+        <div className="flex flex-row backdrop-blur-2xl  z-999 sticky top-0 gap-140 pl-5   mb-10 rounded-2xl">
             {/* container for image*/}
              
-            <div className="basis-64 mr-50">
+            <div className="basis-64 mr-50 pt-2.5">
                     <Image 
                     width={25}
                     height={100}
@@ -55,30 +56,30 @@ export default function Header({isDark,setIsDark}){
 
             {/*container for other icons */}
             <div className="basis-128 grid grid-cols-4">
-                <button className={`p-3 w-auto text-center font-display text-red-300 hover:bg-card/50 transition-all duration-500 rounded-2xl
-                                    relative ${activeSection==="Profile"?"after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-3/4 after:h-0.5 after:bg-red-300 after:rounded-full":""}`}
+                <button className={`p-3 w-auto text-center font-display text-tertiary hover:bg-card/50 transition-all duration-500 rounded-2xl
+                                    relative ${activeSection==="Profile"?"after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-3/4 after:h-0.5 after:bg-tertiary after:rounded-full":""}`}
                         onClick={()=>scrollToSection("Profile")}
                 >
                     heyaa!
                 </button>
-                <button className={`p-3 w-auto text-center font-display text-red-300 hover:bg-card/50 transition-all duration-500 rounded-2xl
-                                    relative ${activeSection==="Projects"?"after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-3/4 after:h-0.5 after:bg-red-300 after:rounded-full":""}`}
-                        onClick={()=>scrollToSection("Projects")}
-                >
-                    Projects
-                </button>
-                <button className={`p-3 w-auto text-center font-display text-red-300 hover:bg-card/50 transition-all duration-500 rounded-2xl
-                                    relative ${activeSection==="About"?"after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-3/4 after:h-0.5 after:bg-red-300 after:rounded-full":""}`}
+                <button className={`p-3 w-auto text-center font-display text-tertiary hover:bg-card/50 transition-all duration-500 rounded-2xl
+                                    relative ${activeSection==="About"?"after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-3/4 after:h-0.5 after:bg-tertiary after:rounded-full":""}`}
                         onClick={()=>scrollToSection("About")}
                 >
                     About
+                </button>
+                <button className={`p-3 w-auto text-center font-display text-tertiary hover:bg-card/50 transition-all duration-500 rounded-2xl
+                                    relative ${activeSection==="Projects"?"after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-3/4 after:h-0.5 after:bg-tertiary after:rounded-full":""}`}
+                        onClick={()=>scrollToSection("Projects")}
+                >
+                    Projects
                 </button>
                 <button
                     className="p-1 w-20 flex items-center justify-center text-center hover:bg-card/50 transition-all duration-500 rounded-2xl"
                     onClick={trigger}
                     aria-label="Toggle dark mode"
                 >
-                    <MdDarkMode />
+                    <TiWaves />
                 </button>
             </div>
         </div>

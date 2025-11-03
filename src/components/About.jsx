@@ -61,10 +61,10 @@ export default function About(){
             */}
 
             {/*text about me*/}
-            <div className="text-lg text-wrap p-50 ">
+            <div className="text-lg text-wrap p-25 ">
                     <b className="underline">Shashwat Jain</b>
-                    <p>Hello. I’m a Computer Science student at <strong>VIT</strong> and a passionate <strong>Fullstack Developer</strong>.  
-                    Beyond coding, I’m drawn to <em>psychology, philosophy, history, writing, reading</em>, and <em>design</em>.  
+                    <p>Hello. I’m a Computer Science student at <strong>VIT</strong> and a <strong>Fullstack Developer</strong>.  
+                    Beyond coding, I love to study <em>psychology, philosophy, history, writing, reading</em>, and <em>design</em>.  
                     I love exploring how art, logic, and human behavior intersect.</p>
 
                     <p>My professional focus lies in <strong>Web Development</strong>, <strong>Cloud Computing</strong>, and <strong>Design</strong>.</p>
@@ -82,7 +82,7 @@ export default function About(){
                     <p>
                     <strong>Article you should read:</strong> <a href="https://populationmatters.org/news/2025/07/earth-overshoot-day-we-are-in-debt-to-our-planet/">We are in debt to our planet</a><br/>
                     <strong>Podcast you should Listen:</strong> <a href="https://open.spotify.com/episode/5s1wf4sUEr8wrl39WlyMIf?si=2a6fc35b15514c1b">Shia LeBeouf</a><br/>
-                    <strong>Album you should listen to:</strong> <a href="https://open.spotify.com/album/7xYiTrbTL57QO0bb4hXIKo?si=w7PyPgl-RCmKjjAWmrvIDw">Lust For life – Lana del ray</a><br/>
+                    <strong>Album you should listen to:</strong> <a href="https://open.spotify.com/album/7xYiTrbTL57QO0bb4hXIKo?si=w7PyPgl-RCmKjjAWmrvIDw">Lust For life</a><br/>
                     <strong>Book you should read:</strong> <a href="https://www.goodreads.com/book/show/22529379-a-higher-form-of-killing?ac=1&from_search=true&qid=qbm5dCi2z6&rank=1">Higher form of killing - Diana Preston</a><br/>
                     <strong>Movie you should watch:</strong> <a href="https://letterboxd.com/film/green-book/">The Green Book</a>
                     </p>

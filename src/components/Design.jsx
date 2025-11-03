@@ -26,7 +26,7 @@ export default function Design({isDark}){
       requestAnimationFrame(step);
     };
     return(
-        <div className="flex flex-col mb-300">
+        <div className="flex flex-col ">
             {/* for my name add some font*/}
             <div className="text-center mt-50 mb-80" onClick={handleScroll} >
                 <b className="text-5xl">Shashwat Jain</b>

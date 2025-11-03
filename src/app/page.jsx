@@ -27,12 +27,15 @@ export default function Home() {
       <Header isDark={isDark} setIsDark={setIsDark}/>
 
     {/* for design */}
-    <div>
+    <div id="Profile">
       <Design isDark={isDark} />
     </div>
+    <div className="p-0.5" id="About">
+      <About id="About" />
+     </div>
 
     {/*this is for profile section*/}
-    <div className="p-15 " id="Profile">
+    <div className="p-15 ">
       <Profile/>
     </div>
 
@@ -41,11 +44,7 @@ export default function Home() {
       <Projects/>
      </div>
 
-     {/*this is for free time section */}
-     <div className="p-0.5" id="About">
-      <About />
-     </div>
-
+    
      <div className="p-0.5">
       <Footer />
      </div>

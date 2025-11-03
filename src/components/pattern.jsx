@@ -1,30 +1,43 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react";
 
-export default function Pattern(isDark) {
+export default function Pattern({ isDark }) {
+  const [colors, setColors] = useState({
+    color1: "#1e425f", // Deep navy blue
+    color2: "#00b9b0", // Cyan accent
+    color3: "#d2efff", // Light sky blue
+    bg: "#1e425f",     // Background
+  });
 
-    /*--color-bluish-2: #1e425f;   /* Deep navy blue 
-  --color-secondary: #00b0ff; /* Bright cyan blue 
-  --color-tertiary: #d2efff;  /* Soft sky blue */ 
-
-    //function to change color values when isDark changes
-    let color1="#1e425f"
-    let color2="#00b9b0"
-    let color3="#d2efff"
-    let bg="#1e425f"
-    useEffect(()=>{
-        if(isDark){
-    }else{
-        //nothing for now
+  useEffect(() => {
+    if (isDark) {
+      // Dark mode palette
+      setColors({
+        color1: "#1e425f",
+        color2: "#00b9b0",
+        color3: "#d2efff",
+        bg: "#1e425f",
+      });
+    } else {
+      // Light mode palette (you can tweak these)
+      setColors({
+        color1: "#d2efff",
+        color2: "#00b9b0",
+        color3: "#1e425f",
+        bg: "#ffffff",
+      });
     }
-    },[isDark])
-    
+  }, [isDark]);
+
+  const { color1, color2, color3, bg } = colors;
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 800 800"
       className="w-full h-auto"
     >
-      <rect width="600" height="600" fill={bg} />
+      <rect width="800" height="800" fill={bg} />
+
       {/* Row 1 */}
       <rect x="0" y="0" width="200" height="200" fill={color1} />
       <path d="M200,0 A200,200 0 0,1 0,200 L0,0 Z" fill={color3} />
