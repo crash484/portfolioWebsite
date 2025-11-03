@@ -1,12 +1,12 @@
-import Pattern from "@/app/assests/pattern.svg"
+import Pattern from "@/components/pattern"
 
 export default function Design(){
     const handleScroll = () => {
       // custom smooth scroll with easing so we can control duration
-      const start = window.scrollY || window.pageYOffset;
+      const start = window.scrollY; 
       const target = document.body.scrollHeight;
       const distance = target - start;
-      const duration = 8500; // milliseconds (make this larger to slow the animation)
+      const duration = 5000; // milliseconds (make this larger to slow the animation)
       let startTime = null;
 
       // easeInOutQuad easing
@@ -33,7 +33,10 @@ export default function Design(){
             </div>
         
             {/* for some drawing or some shit */}
-            <div>
+            <div className="w-full h-fit">
+              <div className="relative right-0 w-200 h-3xl">
+                <Pattern />
+              </div>
             </div>
         </div>
     )
