@@ -28,13 +28,13 @@ export default function Design(){
     return(
         <div className="flex flex-col mb-300">
             {/* for my name add some font*/}
-            <div className="text-center" onClick={handleScroll}>
+            <div className="text-center mb-30" onClick={handleScroll} >
                 <b className="text-5xl">Shashwat Jain</b>
             </div>
         
             {/* for some drawing or some shit */}
-            <div className="w-full h-fit">
-              <div className="relative right-0 w-200 h-3xl">
+            <div className="w-full h-fit flex justify-end">
+              <div className="w-[60%]">
                 <Pattern />
               </div>
             </div>
