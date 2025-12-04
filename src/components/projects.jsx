@@ -18,6 +18,7 @@ export default function Projects(){
                 <div className="w-300">
                     <div className=" text-xl text-wrap">
                         {/*this will contain the text part */}
+                        <h1><b>PersonalBlog</b></h1>
                         <p>
                             I love thinking and sharing those thoughts with the world
                             so i created this blog which allows me to do so and also add images and music
@@ -48,8 +49,9 @@ export default function Projects(){
                 <div className="w-300">
                     <div className=" text-xl text-wrap">
                         {/*this will contain the text part */}
+                        <h1><b>SageExcel</b></h1>
                         <p>
-                           SageExcel is an intelligent Excel analysis tool that leverages AI to provide insights and 
+                           it is an intelligent Excel analysis tool that leverages AI to provide insights and 
                            feedback on spreadsheet data. Built with a React.js  Node.js and Express.js backend
                            , it integrates MongoDB for storage and Gemini API for smart data analysis. Users can upload 
                            Excel files and instantly visualize trends through interactive charts powered by Chart.js. This 
@@ -64,6 +66,36 @@ export default function Projects(){
                             <FaGithub />
                         </a>
                         <a href="sage-excel.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition-colors">
+                            <TbWorldSearch />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div className="flex gap-1 relative p-6 pb-2 ">
+                <div className="w-100 h-50 relative overflow-hidden rounded-lg ">
+                    <Image 
+                    src="/WebDesign.png"
+                    alt="WebDesign picture"
+                    fill
+                    />
+                </div>
+                <div className="w-300">
+                    <div className=" text-xl text-wrap">
+                        {/*this will contain the text part */}
+                        <h1><b>Design-System</b></h1>
+                        <p>
+                            I recently started my journey as a freelancer so i prepared this site,
+                            to showcase my skills and what all im offering to my clients, these include
+                            forms,layouts,buttons and many other ui components that are a must in a website
+                            this also include's a book an appointment function allowing them to hop on a call 
+                            me directly.
+                        </p>
+                    </div>
+                    
+                    {/*code and links used add icons with links */}
+                    <div className="flex items-start gap-8 mt-13 text-3xl">
+                        <a href="https://web-design-website-orcin.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition-colors">
                             <TbWorldSearch />
                         </a>
                     </div>

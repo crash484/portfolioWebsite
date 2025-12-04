@@ -34,9 +34,9 @@ export default function Pattern({ isDark }) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 800 800"
-      className="w-full h-auto"
+      className="w-full h-auto border-0"
     >
-      <rect width="800" height="800" fill={bg} />
+      <rect width="600" height="600" fill={bg} />
 
       {/* Row 1 */}
       <rect x="0" y="0" width="200" height="200" fill={color1} />
@@ -67,6 +67,7 @@ export default function Pattern({ isDark }) {
       <path d="M400,400 A200,200 0 0,0 600,600 L400,600 Z" fill={color1} />
       <rect x="600" y="400" width="200" height="200" fill={color2} />
       <circle cx="700" cy="500" r="80" fill={color3} />
+
     </svg>
   );
 }
