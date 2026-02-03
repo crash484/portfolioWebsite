@@ -18,12 +18,12 @@ export default function Pattern({ isDark }) {
         bg: "#1e425f",
       });
     } else {
-      // Light mode palette - Warm sunset theme
+      // Light mode palette - Natural green theme
       setColors({
-        color1: "#ff6b6b", // Coral red
-        color2: "#feca57", // Golden yellow
-        color3: "#48dbfb", // Sky blue
-        bg: "#f8f9fa",     // Off-white background
+        color1: "#609966", // Forest green
+        color2: "#9DC08B", // Soft green
+        color3: "#40513B", // Dark olive green
+        bg: "#EDF1D6",     // Light sage/cream background
       });
     }
   }, [isDark]);

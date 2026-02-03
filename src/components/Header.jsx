@@ -2,13 +2,14 @@
 import Image from "next/image"
 import { TiWaves } from "react-icons/ti"
 import { useState, useEffect } from "react"
+import { FaTree } from "react-icons/fa";
 
 export default function Header({ isDark, setIsDark }) {
   const [activeSection, setActiveSection] = useState("Profile")
 
   const trigger = () => {
-    alert("still coming up with the second theme sorry!")
-    //setIsDark(!isDark);
+    //alert("still coming up with the second theme sorry!")
+    setIsDark(!isDark);
   }
 
   useEffect(() => {
@@ -57,9 +58,9 @@ export default function Header({ isDark, setIsDark }) {
       {/* nav items — hidden on mobile */}
       <div className="hidden md:grid md:grid-cols-4 md:basis-128">
         <button
-          className={`p-3 text-center font-display text-tertiary hover:bg-card/50 transition-all duration-500 rounded-2xl relative
+          className={`p-3 text-center font-display ${isDark?"text-tertiary":"text-[#EDF1D6]"} hover:bg-card/50 transition-all duration-500 rounded-2xl relative
             ${activeSection === "Profile"
-              ? "after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-3/4 after:h-0.5 after:bg-tertiary after:rounded-full"
+              ? `after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-3/4 after:h-0.5 after:rounded-full ${isDark ? "after:bg-tertiary" : "after:bg-[#EDF1D6]"}`
               : ""}`}
           onClick={() => scrollToSection("Profile")}
         >
@@ -67,9 +68,9 @@ export default function Header({ isDark, setIsDark }) {
         </button>
 
         <button
-          className={`p-3 text-center font-display text-tertiary hover:bg-card/50 transition-all duration-500 rounded-2xl relative
+          className={`p-3 text-center font-display ${isDark?"text-tertiary":"text-[#EDF1D6]"} hover:bg-card/50 transition-all duration-500 rounded-2xl relative
             ${activeSection === "About"
-              ? "after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-3/4 after:h-0.5 after:bg-tertiary after:rounded-full"
+              ? `after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-3/4 after:h-0.5 after:rounded-full ${isDark ? "after:bg-tertiary" : "after:bg-[#EDF1D6]"}`
               : ""}`}
           onClick={() => scrollToSection("About")}
         >
@@ -77,9 +78,9 @@ export default function Header({ isDark, setIsDark }) {
         </button>
 
         <button
-          className={`p-3 text-center font-display text-tertiary hover:bg-card/50 transition-all duration-500 rounded-2xl relative
+          className={`p-3 text-center font-display ${isDark?"text-tertiary":"text-[#EDF1D6]"} hover:bg-card/50 transition-all duration-500 rounded-2xl relative
             ${activeSection === "Projects"
-              ? "after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-3/4 after:h-0.5 after:bg-tertiary after:rounded-full"
+              ? `after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-3/4 after:h-0.5 after:rounded-full ${isDark ? "after:bg-tertiary" : "after:bg-[#EDF1D6]"}`
               : ""}`}
           onClick={() => scrollToSection("Projects")}
         >
@@ -91,7 +92,7 @@ export default function Header({ isDark, setIsDark }) {
           onClick={trigger}
           aria-label="Toggle dark mode"
         >
-          <TiWaves />
+          {isDark ? <TiWaves /> : <FaTree />}
         </button>
       </div>
     </div>

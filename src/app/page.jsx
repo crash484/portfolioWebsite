@@ -13,7 +13,7 @@ export default function Home() {
   useEffect(() => {  }, [isDark])
 
   return (
-    <div className={`${isDark ? "bg-bluish-2 text-tertiary" : "bg-secondary"} px-0`}>
+    <div className={`${isDark ? "bg-bluish-2 text-tertiary" : "bg-greenish-2 text-[#EDF1D6]"} px-0`}>
       <Header isDark={isDark} setIsDark={setIsDark} />
 
       {/* design / hero */}
@@ -28,7 +28,7 @@ export default function Home() {
 
       {/* profile */}
       <div className="px-0 py-4 md:p-15">
-        <Profile />
+        <Profile isDark={isDark}/>
       </div>
 
       {/* projects */}

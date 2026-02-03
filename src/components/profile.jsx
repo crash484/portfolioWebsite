@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export default function Profile(){
+export default function Profile({isDark}){
     return(
         /*remove height once done and give it hieght max */
         <div className="flex flex-col align-middle  mx-0.5 mb-5 h-100  rounded-2xl">
@@ -13,7 +13,7 @@ export default function Profile(){
                     />
                 </div>
             </div>
-            <div className="text-center text-xl text-tertiary">
+            <div className={`text-center text-xl ${isDark?"text-tertiary":"text-[#EDF1D6]"}`}>
                 <p>Currently working on getting my aws certification</p>
             </div>
         </div>
