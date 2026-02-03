@@ -2,52 +2,44 @@
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import Profile from "@/components/profile"
-import Projects from "@/components/projects";
-import About from "@/components/About";
-import { useState,useEffect,useRef } from "react";
-import Design from "@/components/Design";
-
-
-{/* icons ill need */}
-import { CiLinkedin } from "react-icons/ci";
-import { CiMail } from "react-icons/ci";
-import { FaInstagram } from "react-icons/fa";
-
+import Projects from "@/components/projects"
+import About from "@/components/About"
+import { useState, useEffect } from "react"
+import Design from "@/components/Design"
 
 export default function Home() {
-  //for changing theme
-  const [isDark, setIsDark] = useState(true);
-  useEffect(()=>{
-    console.log(isDark)
-  },[isDark])
+  const [isDark, setIsDark] = useState(true)
+
+  useEffect(() => {  }, [isDark])
 
   return (
-    
-    <div className={`${isDark?"bg-bluish-2 text-tertiary":"bg-secondary"}`}>
-      <Header isDark={isDark} setIsDark={setIsDark}/>
+    <div className={`${isDark ? "bg-bluish-2 text-tertiary" : "bg-secondary"} px-0`}>
+      <Header isDark={isDark} setIsDark={setIsDark} />
 
-    {/* for design */}
-    <div id="Profile">
-      <Design isDark={isDark} />
+      {/* design / hero */}
+      <div id="Profile" className="px-0">
+        <Design isDark={isDark} />
+      </div>
+
+      {/* about */}
+      <div id="About" className="px-0 py-3 md:p-0.5">
+        <About />
+      </div>
+
+      {/* profile */}
+      <div className="px-0 py-4 md:p-15">
+        <Profile />
+      </div>
+
+      {/* projects */}
+      <div id="Projects" className="px-0 py-3 md:p-0.5">
+        <Projects />
+      </div>
+
+      {/* footer */}
+      <div className="px-0 py-3 md:p-0.5">
+        <Footer />
+      </div>
     </div>
-    <div className="p-0.5" id="About">
-      <About id="About" />
-     </div>
-
-    {/*this is for profile section*/}
-    <div className="p-15 ">
-      <Profile/>
-    </div>
-
-     {/*this is for projects section*/}
-     <div className="p-0.5 " id="Projects" >
-      <Projects/>
-     </div>
-
-    
-     <div className="p-0.5">
-      <Footer />
-     </div>
-    </div>
-  );
+  )
 }

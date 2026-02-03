@@ -1,21 +1,32 @@
 "use client"
-import { FaInfinity } from "react-icons/fa";
+import { FaInfinity } from "react-icons/fa"
 
+export default function Footer() {
+  return (
+    <div
+      className="
+        w-full rounded-2xl shadow-lg mt-8
+        flex flex-col gap-3 items-center justify-center
+        px-0 py-4 h-auto
+        md:flex-row md:justify-between md:items-center
+        md:px-6 md:mt-10 md:h-20
+      "
+    >
+      <div className="text-sm md:text-base text-center">
+        Created by @shashwat
+      </div>
 
-export default function footer(){
-    return(
-        <div className="flex justify-between items-center w-full px-6 mt-10 h-20  rounded-2xl shadow-lg">
-            
-            <div className="">
-                Created by @shashwat
-            </div>
-
-            <div className="">
-                <FaInfinity className="text-3xl" onClick={()=> 
-                                                        window.scroll({top:0,
-                                                                behavior:"smooth"
-                                                                })} />
-            </div>
-        </div>
-    )
+      <div>
+        <FaInfinity
+          className="text-2xl md:text-3xl cursor-pointer"
+          onClick={() =>
+            window.scroll({
+              top: 0,
+              behavior: "smooth",
+            })
+          }
+        />
+      </div>
+    </div>
+  )
 }

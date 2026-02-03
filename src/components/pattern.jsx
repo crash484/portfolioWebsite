@@ -18,12 +18,12 @@ export default function Pattern({ isDark }) {
         bg: "#1e425f",
       });
     } else {
-      // Light mode palette (you can tweak these)
+      // Light mode palette - Warm sunset theme
       setColors({
-        color1: "#d2efff",
-        color2: "#00b9b0",
-        color3: "#1e425f",
-        bg: "#ffffff",
+        color1: "#ff6b6b", // Coral red
+        color2: "#feca57", // Golden yellow
+        color3: "#48dbfb", // Sky blue
+        bg: "#f8f9fa",     // Off-white background
       });
     }
   }, [isDark]);
@@ -31,11 +31,13 @@ export default function Pattern({ isDark }) {
   const { color1, color2, color3, bg } = colors;
 
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 800 800"
-      className="w-full h-auto border-0"
-    >
+    <div className="w-full overflow-x-auto">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 800 800"
+        className="h-auto border-0 min-w-[400px] md:min-w-0 md:w-full"
+        style={{ minWidth: "400px" }}
+      >
       <rect width="600" height="600" fill={bg} />
 
       {/* Row 1 */}
@@ -68,6 +70,7 @@ export default function Pattern({ isDark }) {
       <rect x="600" y="400" width="200" height="200" fill={color2} />
       <circle cx="700" cy="500" r="80" fill={color3} />
 
-    </svg>
+      </svg>
+    </div>
   );
 }
